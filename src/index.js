@@ -19,7 +19,7 @@ class Node {
     }
 
     setupAPI() {
-        this.app.use('/api', require('./api/routes')(this.blockchain, this.p2p));
+        this.app.use('/api', require('../api/routes')(this.blockchain, this.p2p));
     }
 }
 
